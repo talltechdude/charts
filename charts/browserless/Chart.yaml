@@ -1,0 +1,22 @@
+apiVersion: v2
+appVersion: 1.46.0
+description: Chrome as a service in docker. Run on our cloud, or bring your own
+name: browserless
+version: 0.0.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- browserless
+- chrome
+- puppeteer
+home: https://github.com/talltechdude/charts/tree/main/charts/browserless
+icon: https://docs.browserless.io/img/browserless.svg
+sources:
+- https://github.com/browserless/chrome
+- https://github.com/talltechdude/charts/tree/main/charts/browserless
+maintainers:
+- name: TallTechDude
+  email: talltechdude@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.0.0
