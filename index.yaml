@@ -1,18 +1,30 @@
 apiVersion: v1
 entries:
-  node-red:
+  browserless:
   - apiVersion: v2
-    appVersion: v2.0.0-beta.2
-    created: "2021-07-06T07:19:04.025501983Z"
+    appVersion: 1.46.0
+    created: "2021-08-17T05:02:49.632416506Z"
     dependencies:
-    - name: node-red
-      repository: https://k8s-at-home.com/charts
-      version: 8.0.0
-    description: A Helm chart for gitops-based Node-RED
-    digest: 3f121fb2881dfff0dfdf9dc0c0d21f9e2e163ceae1dcda59e9e54a7a525d1125
-    name: node-red
-    type: application
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.0.0
+    description: Chrome as a service in docker. Run on our cloud, or bring your own
+    digest: 00c177da3a9fe274d046a0d436034895dad702c4f7a6ac896f47df71f9b19883
+    home: https://github.com/talltechdude/charts/tree/main/charts/browserless
+    icon: https://docs.browserless.io/img/browserless.svg
+    keywords:
+    - browserless
+    - chrome
+    - puppeteer
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: talltechdude@gmail.com
+      name: TallTechDude
+    name: browserless
+    sources:
+    - https://github.com/browserless/chrome
+    - https://github.com/talltechdude/charts/tree/main/charts/browserless
     urls:
-    - https://github.com/talltechdude/charts/releases/download/node-red-1.0.1/node-red-1.0.1.tgz
-    version: 1.0.1
-generated: "2021-07-06T07:19:04.025508383Z"
+    - https://github.com/talltechdude/charts/releases/download/browserless-0.0.1/browserless-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-08-17T05:02:49.632421506Z"
