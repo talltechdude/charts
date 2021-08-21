@@ -30,6 +30,31 @@ entries:
   error-pages:
   - apiVersion: v2
     appVersion: 1.7.2
+    created: "2021-08-21T08:20:01.3995051Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.0.0
+    description: Static server error pages in a docker image
+    digest: d67242cf7a70d62e89e50fea9d0e4dc9b300732e3f74615127040376b0fbb3f4
+    home: https://github.com/talltechdude/charts/tree/main/charts/error-pages
+    icon: https://hsto.org/webt/rm/9y/ww/rm9ywwx3gjv9agwkcmllhsuyo7k.png
+    keywords:
+    - error-pages
+    - traefik
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: talltechdude@gmail.com
+      name: TallTechDude
+    name: error-pages
+    sources:
+    - https://github.com/tarampampam/error-pages
+    - https://github.com/talltechdude/charts/tree/main/charts/error-pages
+    urls:
+    - https://github.com/talltechdude/charts/releases/download/error-pages-0.0.2/error-pages-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 1.7.2
     created: "2021-08-21T08:02:30.643432516Z"
     dependencies:
     - name: common
@@ -53,4 +78,4 @@ entries:
     urls:
     - https://github.com/talltechdude/charts/releases/download/error-pages-0.0.1/error-pages-0.0.1.tgz
     version: 0.0.1
-generated: "2021-08-21T08:02:30.643438216Z"
+generated: "2021-08-21T08:20:01.3995138Z"
