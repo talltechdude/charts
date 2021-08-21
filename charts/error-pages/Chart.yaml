@@ -1,0 +1,21 @@
+apiVersion: v2
+appVersion: 1.7.2
+description: Static server error pages in a docker image
+name: error-pages
+version: 0.0.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+- error-pages
+- traefik
+home: https://github.com/talltechdude/charts/tree/main/charts/error-pages
+icon: https://hsto.org/webt/rm/9y/ww/rm9ywwx3gjv9agwkcmllhsuyo7k.png
+sources:
+- https://github.com/tarampampam/error-pages
+- https://github.com/talltechdude/charts/tree/main/charts/error-pages
+maintainers:
+- name: TallTechDude
+  email: talltechdude@gmail.com
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.0.0

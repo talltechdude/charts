@@ -1,0 +1,17 @@
+{{- if .Values.traefik.ingressroute.enabled }}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: error-pages
+spec:
+  entryPoints:
+    - {{ .Values.traefik.ingressroute.entrypoint }}
+  routes:
+    - kind: Rule
+      match: HostRegexp(`{host:.+}`)
+      priority: 1
+      services:
+        - kind: Service
+          name: error-pages
+          port: 8080
+{{- end }}
