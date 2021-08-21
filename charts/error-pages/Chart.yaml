@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 1.7.2
 description: Static server error pages in a docker image
 name: error-pages
-version: 0.0.1
+version: 0.0.2
 kubeVersion: ">=1.16.0-0"
 keywords:
 - error-pages
